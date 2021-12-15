@@ -1,0 +1,25 @@
+FileVersion = 1
+Dependencies = {corlib = "*", raylib-beef = "*"}
+
+[Project]
+Name = "raylib-beef-examples"
+TargetType = "BeefGUIApplication"
+StartupObject = "raylib_beef_examples.Program"
+
+[Configs.Debug.Win32]
+PostBuildCmds = ["CopyFilesIfNewer(\"$(ProjectDir)/resources\", \"$(TargetDir)/resources\")"]
+
+[Configs.Debug.Win64]
+PostBuildCmds = ["CopyFilesIfNewer(\"$(ProjectDir)/resources\", \"$(TargetDir)/resources\")"]
+
+[Configs.Release.Win32]
+PostBuildCmds = ["CopyFilesIfNewer(\"$(ProjectDir)/resources\", \"$(TargetDir)/resources\")"]
+
+[Configs.Release.Win64]
+PostBuildCmds = ["CopyFilesIfNewer(\"$(ProjectDir)/resources\", \"$(TargetDir)/resources\")"]
+
+[Configs.Paranoid.Win32]
+PostBuildCmds = ["CopyFilesIfNewer(\"$(ProjectDir)/resources\", \"$(TargetDir)/resources\")"]
+
+[Configs.Test.Win32]
+PostBuildCmds = ["CopyFilesIfNewer(\"$(ProjectDir)/resources\", \"$(TargetDir)/resources\")"]
